@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    background: #EDEDF1 ;
+}
+.kotak-blank{
+    width: 100%;
+    height: 654px;
+    background-color: rgb(0,0,0, 0.3);
+    position: fixed;
+    z-index: 20px;
+    right:  0;
+    top: 0;
+}
+button:hover, li p:hover{
+    cursor: pointer;
+}
+
+.alpha{
+    color: #0F173A;
+    text-decoration: line-through;
+}
+
+.cointainer{
+    background-color: #37c837;
+    margin: 50px auto 0 auto;
+    width: 70%;
+    box-shadow: 1px 1px 7px 1px  rgba(24, 23, 23, 0.432);
+    height:  100%;
+
+}
+
+/* For pop-up */
+.pop-up{
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    right: 37%;
+    top: 150px;
+    box-shadow: 2px 2px 5px rgb(0.0.0. 0.5);
+}
+.pop-up h3 {
+    text-align: center;
+    margin:  20px 0 30px 0;
+}
+.pop-up input{
+    margin-bottom: 15px;
+}
+.pop-up .mid{
+    width: 80%;
+    margin: auto;
+}
+.pop-up button{
+    background-color: #F77030  ;
+    border:none;
+    font-weight: bold;
+    height: 20px;
+    width:70px;
+    text-align: center;
+    border-radius: 3px;
+    color:  white;
+}
+.your-name:focus {
+    outline-color: #1082E1;
+  }
+.your-name{
+    height: 30px;
+    border:none;
+    margin: 0 0 0 25px;
+
+}
+
+/* Akhir pop-up */
+
+
+/* Bagian Head */
+.head-color{
+    width: 100%;
+    height: 150px;
+    background-color: #37c837;
+    margin: 0 0 20px 0;
+}
+.cointainer .head-color .head {
+    width: 90%;
+    margin: 0 auto 10px auto;
+    padding: 20px 0 0 0;
+    box-sizing: border-box;
+}
+.bagian-2 .text-on {
+    font-weight: bold;
+    font-size: 15px;
+    color:  white;
+}
+
+.bagian-1{
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+}
+.change-name{
+    justify-self: end;
+}
+.bagian-1 .change-name, .button-change{
+    background-color: white;
+    border: none;
+    width: 90px;
+    height: 30px;
+    font-weight: bold;
+    color: rgb(12, 5, 36);
+    transition: active, 0.2s;
+    background-color: white;
+}
+.button-change{
+    display: none;
+}
+.change-name:active{
+    background-color: rgb(12, 5, 36);
+    color: white;
+}
+.bagian-1 h4{
+    color: white;
+    /* background-color: salmon; */
+    font-size: 25px;
+}
+
+/* Akhi Dari Bagian Head */
+
+/*Tod do list yang sedang dikerjakan untuk meningkatkan skill javascript*/
+.kotak-kolom h2{
+    text-align: center;
+    margin:  0 0 60px 0;
+    font-weight: bold;
+    font-size: 30px;
+    color: #0F173A;
+}
+.cointainer ul {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.list-kolom h1{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(33, 31, 35, 0.6);
+}
+.kotak-kolom ul li label{
+    font-size: 25px;
+    margin-left:  50px;
+}
+ li p {
+    font-weight: bold;
+ }
+ /*Bagian Daftar List*/
+.kotak-kolom{
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    padding-top: 70px;
+}
+.cointainer ul li input {
+    background-color:salmon;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.kolom {
+    display: grid;
+}
+#form-list{
+    width: 100%;
+    border: none;
+    height: 45px;
+    margin:  0 0 30px 0;
+}
+#form-list:focus{
+    outline-color: #1082E1 ;
+
+}
+#form-list[placeholder]{
+    text-align: center;
+}
+#kata1 {
+    background-color: #37c837;
+    width: 150px;
+    height: 40px;
+    margin:  0 auto 20px auto;
+    text-align:  center;
+    border: none;
+    border-radius: 5px;
+    color:  white;
+    font-weight: bold;
+}
+.baru{
+    display: grid;
+    margin: 0 0 60px 5px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+.baru span{
+    font-weight: bold;
+}
+.kotak-kolom ul li{
+    display:  grid;
+    grid-template-columns: 0.1fr 3fr 0.3fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px 0 20px 20px;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.466);
+}
+
+@media only screen and (max-width: 768px){
+    .cointainer{
+        width: 90%;
+    }
+    .bagian-1{
+        display: inline-block;
+    }
+    .change-name{
+        display: none;
+    }
+    .button-change{
+        display: block;
+        margin-top: 20px;
+    }
+    .pop-up{
+        right: 15%;
+    }
+}
