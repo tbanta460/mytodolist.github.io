@@ -10,6 +10,7 @@ body {
     margin: 0;
     font-family: helvetica, sans-serif;
     background: #EDEDF1 ;
+    height: 0;
 }
 .kotak-blank{
     width: 100%;
@@ -82,7 +83,7 @@ button:hover, li p:hover{
 }
 .subname button{
     /* background-color: blue; */
-    background-color: #F77030  ;
+    background-color: #30f77c  ;
     border:none;
     font-weight: bold;
     height: 20px;
